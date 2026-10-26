@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Time</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="quiz-page">
+        <div class="quiz-card">
+
+            <div class="quiz-header">
+                <span class="quiz-logo">✦ QUIZ TIME</span>
+                <span class="quiz-tag">JAVASCRIPT</span>
+            </div>
+
+            <div class="quiz-intro">
+                <p class="quiz-eyebrow">TEST YOUR KNOWLEDGE</p>
+                <h1>Let's Play a Quiz!</h1>
+                <p class="quiz-subtitle">
+                    Choose the correct answer and test your skills.
+                </p>
+            </div>
+
+            <div class="quiz-progress-area">
+                <div class="quiz-progress-info">
+                    <span id="question-count">Question 1 of 3</span>
+                    <span id="progress-percent">33%</span>
+                </div>
+
+                <div class="quiz-progress-track">
+                    <div id="progress-bar"></div>
+                </div>
+            </div>
+
+            <div id="quizbox"></div>
+
+            <div id="quiz-feedback" aria-live="polite"></div>
+
+            <button id="nextbutton" disabled>
+                Check Answer <span>→</span>
+            </button>
+
+            <p class="quiz-footer">
+                Take your time. You've got this!
+            </p>
+
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
